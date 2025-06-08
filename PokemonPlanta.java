@@ -1,13 +1,19 @@
 public class PokemonPlanta extends Pokemon{ 
 	
 	public String mote; 
-	public String ataque;
+	public String ataque1;
+	public String ataque2;
 	public String tipo = "Planta";
+	public String debilidad = "Fuego";
 	
-public PokemonPlanta (String nombre, int nivel, String region, String mote, String ataque) {		
+public PokemonPlanta (String nombre, int nivel, String region, String mote, String ataque1, String tipoAtaque1,  String ataque2, String tipoAtaque2) {		
 		super (nombre, nivel, region);	
 		this.mote = mote;
-		this.ataque = ataque;	
+		this.ataque1 = ataque1;	
+		this.tipoAtaque1 = tipoAtaque1;
+		this.ataque2 = ataque2;	
+		this.tipoAtaque2 = tipoAtaque2;
+		
 	}
 	
 	public void atacar (String ataque) {
@@ -23,12 +29,20 @@ public PokemonPlanta (String nombre, int nivel, String region, String mote, Stri
 		this.mote = mote;
 	}
 	
-	public String getAtaque() {
-		return ataque;
+	public String getAtaque1() {
+		return ataque1;
 	}
 	
-	public void setAtaque(String ataque) {
-		this.ataque = ataque;
+	public void setAtaque1(String ataque1) {
+		this.ataque1 = ataque2;
+	}
+	
+	public String getAtaque2() {
+		return ataque2;
+	}
+	
+	public void setAtaque2(String ataque2) {
+		this.ataque2 = ataque2;
 	}
 	
 	public String getTipo() {
