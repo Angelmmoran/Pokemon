@@ -4,7 +4,6 @@ public class Pokemon {
 	protected int nivel;	 
 	protected int vida = 50;
 	protected String region;
-	protected String mote;
 	public String ataque1;
 	public String tipoAtaque1;
 	public String ataque2;
@@ -12,11 +11,16 @@ public class Pokemon {
 	protected String tipo;
 	
 	
-	public Pokemon (String nombre, int nivel, String region) {
+	public Pokemon (String nombre, int nivel, String region, String ataque1, String ataque2, String tipoAtaque1, String tipoAtaque2, String tipo) {
 		
 		this.nombre = nombre;
 		this.nivel = nivel;
 		this.region = region;
+		this.ataque1 = ataque1;
+		this.ataque2 = ataque2;
+		this.tipoAtaque1 = tipoAtaque1;
+		this.tipoAtaque2 = tipoAtaque2;
+		this.tipo = tipo;
 	}
 	
 	
@@ -52,9 +56,7 @@ public class Pokemon {
 		this.region = region;
 	}
 	
-	public String getMote() {
-		return mote;
-	}
+	
 	
 	public String getAtaque1() {
 		return ataque1;

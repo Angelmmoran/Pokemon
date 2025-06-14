@@ -2,11 +2,11 @@ public class Main {
 	
 	public static void main (String[] args) {
 		
-		PokemonAgua squirtle = new PokemonAgua ("Squirtle",  25, "Kanto", "Caracolillo", "Pistola Agua", "Agua", "Placaje", "Normal");
+		PokemonAgua squirtle = new PokemonAgua ("Squirtle",  25, "Kanto", "Pistola Agua", "Agua", "Placaje", "Normal");
 		
-		PokemonFuego charmander = new PokemonFuego ("Charmander", 20, "Kanto", "Lagarto", "Ascuas", "Fuego", "Arañazo", "Normal");
+		PokemonFuego charmander = new PokemonFuego ("Charmander", 20, "Kanto", "Ascuas", "Fuego", "Arañazo", "Normal");
 		
-		PokemonPlanta bulbasaur = new PokemonPlanta ("Bulbasaur", 80, "Kanto", "Lechuguilla","Látigo Cepa", "Planta",  "Golpe Cuerpo" , "Normal");
+		PokemonPlanta bulbasaur = new PokemonPlanta ("Bulbasaur", 80, "Kanto","Látigo Cepa", "Planta",  "Golpe Cuerpo" , "Normal");
 		
 		Entrenador Ash = new Entrenador ("Ash", 200, 8, "Pueblo Paleta", charmander);
 		
@@ -17,6 +17,8 @@ public class Main {
 		Combate combate1 = new Combate (Ash, Misty); 
 		combate1.comenzarCombate();				
 		
+		Combate combate2 = new Combate (Brock, Ash);
+		combate2.comenzarCombate();
 	
 	}
 		

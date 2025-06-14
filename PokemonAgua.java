@@ -8,9 +8,9 @@ public class PokemonAgua extends Pokemon {
 	public String tipo = "Agua";
 	public String debilidad = "Planta";
 	
-public PokemonAgua (String nombre, int nivel, String region, String mote, String ataque1, String tipoAtaque1, String ataque2, String tipoAtaque2) {		
-		super (nombre, nivel, region);		
-		this.mote = mote;
+public PokemonAgua (String nombre, int nivel, String region, String ataque1, String tipoAtaque1, String ataque2, String tipoAtaque2) {		
+		super (nombre, nivel, region, ataque1, ataque2, tipoAtaque1, tipoAtaque2, tipoAtaque2);		
+		
 		this.ataque1 = ataque1;	
 		this.tipoAtaque1 = tipoAtaque1;
 		this.ataque2 = ataque2;	
